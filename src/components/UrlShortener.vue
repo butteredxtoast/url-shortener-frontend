@@ -33,10 +33,10 @@
             URL Shortened Successfully!
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <div class="flex items-center space-x-4">
-            <Input :value="result.short_url" readonly class="flex-1" ref="resultInput" />
-            <Button @click="copyToClipboard" variant="outline" size="sm">
+        <CardContent class="space-y-4">
+          <div class="space-y-3">
+            <Input :modelValue="result.short_url" readonly ref="resultInput" />
+            <Button @click="copyToClipboard" variant="outline" size="sm" class="w-full">
               <Copy v-if="!copied" class="w-4 h-4 mr-2" />
               <Check v-else class="w-4 h-4 mr-2" />
               {{ copied ? 'Copied!' : 'Copy' }}

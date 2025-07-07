@@ -2,7 +2,8 @@
   <Card>
     <CardHeader>
       <CardTitle>Elongate Your URL</CardTitle>
-      <CardDescription> Enter a URL below to create an elongated version </CardDescription>
+      <CardDescription> I haven't bought a custom domain so there's a decent chance your URL will get longer.<br>
+        Enter a URL below to create an elongated version </CardDescription>
     </CardHeader>
 
     <CardContent class="space-y-4">
@@ -16,7 +17,7 @@
         />
         <Button type="submit" :disabled="loading || !originalUrl">
           <Loader2 v-if="loading" class="w-4 h-4 mr-2 animate-spin" />
-          {{ loading ? 'Shortening...' : 'Shorten' }}
+          {{ loading ? 'Changing...' : 'Change' }}
         </Button>
       </form>
 

@@ -1,8 +1,8 @@
 <template>
   <Card>
     <CardHeader>
-      <CardTitle>Shorten Your URL</CardTitle>
-      <CardDescription> Enter a long URL below to create a shortened version </CardDescription>
+      <CardTitle>Elongate Your URL</CardTitle>
+      <CardDescription> Enter a URL below to create an elongated version </CardDescription>
     </CardHeader>
 
     <CardContent class="space-y-4">
@@ -30,7 +30,7 @@
         <CardHeader>
           <CardTitle class="text-green-800 flex items-center gap-2">
             <CheckCircle class="h-5 w-5" />
-            URL Shortened Successfully!
+            URL Elongated Successfully!
           </CardTitle>
         </CardHeader>
         <CardContent class="space-y-4">
